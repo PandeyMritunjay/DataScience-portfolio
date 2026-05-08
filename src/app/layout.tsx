@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Allura, Dancing_Script, Inter, Parisienne } from "next/font/google";
 import "./globals.css";
 import SpotlightCursor from "@/components/SpotlightCursor";
@@ -27,6 +27,12 @@ const dancing = Dancing_Script({
   weight: ["500", "600", "700"],
 });
 
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 export const metadata: Metadata = {
   title: "Hire Data Scientist",
   description: "Portfolio of Mritunjay Pandey, a Data Scientist and AI Engineer specializing in machine learning, deep learning, and artificial intelligence solutions.",

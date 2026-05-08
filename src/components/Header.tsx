@@ -44,13 +44,13 @@ export default function Header() {
         target="_blank"
         rel="noopener noreferrer"
         className="
-          fixed top-8 left-[2cm] z-[100]
+          fixed top-4 left-4 sm:top-6 sm:left-6 md:top-8 md:left-8 z-[100]
           overflow-hidden
           inline-flex items-center justify-center gap-2
           rounded-[15px]
-          px-8 py-3
-          min-w-[120px] h-[52px]
-          text-white text-[16px] font-semibold
+          px-4 sm:px-6 md:px-8 py-2 sm:py-3
+          min-w-[100px] sm:min-w-[120px] h-[40px] sm:h-[52px]
+          text-white text-sm sm:text-[16px] font-semibold
           shadow-[0_0_35px_rgba(255,0,170,0.35)]
           pointer-events-auto
         "
@@ -115,17 +115,20 @@ export default function Header() {
         target="_blank"
         rel="noopener noreferrer"
         className="
-          fixed top-8 left-[33cm] z-[60]
-          relative overflow-hidden
-          inline-flex items-center justify-center
+          hidden md:flex
+          fixed top-6 right-6 md:top-8 md:right-8 z-[60]
+          overflow-hidden
+          items-center justify-center
           rounded-[18px]
-          px-8 py-3
-          min-w-[180px] h-[52px]
-          text-white text-[16px] font-normal
+          px-6 py-2 md:px-8 md:py-3
+          min-w-[160px] md:min-w-[180px] h-[44px] md:h-[52px]
+          text-white text-sm md:text-[16px] font-normal
           shadow-[0_0_35px_rgba(255,0,170,0.35)]
         "
+        animate={hidden ? { y: -80, opacity: 0 } : { y: 0, opacity: 1 }}
+        transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
+        style={{ pointerEvents: hidden ? "none" : "auto" }}
         whileHover={{ scale: 1.05 }}
-        transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         {/* Rainbow Background */}
         <span
@@ -165,7 +168,7 @@ export default function Header() {
 
       {/* NAVBAR */}
       <motion.header
-        className="fixed top-8 left-[2cm] right-[1cm] z-50"
+        className="fixed top-8 left-4 right-4 sm:left-6 sm:right-6 md:left-8 md:right-8 lg:left-12 lg:right-12 z-50"
         animate={hidden ? { y: -80, opacity: 0 } : { y: 0, opacity: 1 }}
         transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
         style={{ pointerEvents: hidden ? "none" : "auto" }}

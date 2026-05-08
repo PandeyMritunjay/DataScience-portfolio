@@ -16,8 +16,7 @@ export default function Home() {
       <Header />
       
       <main
-        className="flex flex-col gap-y-16"
-        style={{ paddingLeft: "2cm", paddingRight: "1cm" }}
+        className="flex flex-col gap-y-16 px-6 sm:px-8 md:px-12 lg:px-16"
       >
         <Hero />
         <About />

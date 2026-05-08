@@ -46,8 +46,8 @@ export const metadata: Metadata = {
     description: "Portfolio showcasing AI and Data Science projects",
   },
   icons: {
-    icon: "fav1.png",
-    shortcut: "D:\AI Fullstack\CascadeProjects\windsurf-project\logos\fav1.png",
+    icon: "/logos/fav1.png?v=4",
+    shortcut: "/logos/fav1.png?v=4",
   },
 };
 

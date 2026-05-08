@@ -78,10 +78,10 @@ export default function Experience() {
           </h2>
         </motion.div>
 
-        <div className="relative overflow-x-auto">
+        <div className="relative">
           {/* <div className="absolute left-0 right-0 top-3 h-px bg-cyan-300/20" /> */}
 
-          <div className="grid grid-cols-4 gap-15 pt-6 min-w-[1180px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-15 pt-6">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}

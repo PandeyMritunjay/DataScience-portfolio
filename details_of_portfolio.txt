@@ -1,0 +1,318 @@
+WEBSITE DATA DUMP
+Project: AI/ML Engineer Portfolio
+
+========================================
+1) SITE METADATA
+========================================
+Title: AI/ML Engineer Portfolio
+Description: Advanced AI/ML Engineer Portfolio showcasing projects, skills, and experience
+
+========================================
+2) PRIMARY SECTIONS (IN PAGE ORDER)
+========================================
+1. Home
+2. About
+3. Skills
+4. Research Paper
+5. Projects
+6. Experience
+7. Contact Bar (Bottom Contact Form)
+8. Footer
+
+Hero quick navigation links:
+- about -> #about
+- skills -> #skills
+- education -> #education (note: no separate "education" section ID found; education content appears inside Skills section)
+- projects -> #projects
+- experience -> #experience
+
+========================================
+3) TOP NAVIGATION / ACTION LINKS
+========================================
+Resume (View Resume):
+- https://drive.google.com/file/d/1sDdnDEQUMfyNy2M_1eSwazplsbOg5jg9/view?usp=sharing
+
+Schedule a Meeting:
+- https://calendly.com/mritunjaypandey0429/30min
+
+========================================
+4) HERO
+========================================
+Headline:
+- Building Intelligent Systems
+
+========================================
+5) ABOUT ME
+========================================
+Name:
+- Mritunjay Pandey
+
+Role:
+- AI/ML Engineer
+
+Profile image:
+- /Mritunjay.jpg
+
+About text:
+- I am an AI/ML Engineer with a B.Tech from NIT Jalandhar.
+- Currently working as an Analyst at Aditya Birla Group.
+- Previously worked at Namekart as an AI Engineer.
+- Worked at Invisible Technologies (Google DeepMind project) as an AI RLHF Agent (Contract).
+- Worked at SEIL as a Machine Learning Engineer Intern.
+- Combined experience: around 1.2 years in applied AI and real-world problem solving.
+
+Key strengths:
+- Machine learning
+- Deep Learning
+- Transformers and NLP
+- LLMs (GPT, BERT)
+- Fine-tuning
+- RAG
+- PyTorch
+- Azure
+
+========================================
+6) CONTACT ICON LINKS (UNDER HERO)
+========================================
+Email:
+- Value: mritunjaypandey0429@gmail.com
+- Link: mailto:mritunjaypandey0429@gmail.com
+
+LinkedIn:
+- Value: pandeym29
+- Link: https://www.linkedin.com/in/pandeym29/
+
+GitHub:
+- Value: PandeyMritunjay
+- Link: https://github.com/PandeyMritunjay
+
+Twitter:
+- Value: @Pandey_M29
+- Link: https://twitter.com/Pandey_M29
+
+Tagline:
+- Noise into products through advanced ML, deepNET, and LLM modeling.
+
+========================================
+7) SKILLS + EDUCATION
+========================================
+Technical skills:
+- Python
+- Machine Learning
+- Deep Learning
+- Transformers
+- Natural Language Processing
+- Recommendation Systems
+- LangChain
+- Large Language Models (LLMs)
+- Fine-Tuning (LoRA)
+- Vector Databases (FAISS/ChromaDB)
+- Azure ML Studio
+
+Libraries / Tools:
+- PPyTorch (as written in code)
+- Hugging Face
+- Scikit-Learn
+- Git / GitHub
+- ONNX Runtime
+- Pandas
+
+Core subjects:
+- Python
+- Data Structures and Algorithms
+- Linear Algebra
+- Calculus
+- Statistics
+- Probability
+- Data Analysis
+- SQL
+
+Education:
+- Institute: Dr B R Ambedkar National Institute of Technology (NIT), Jalandhar
+- Duration: 2021 - 2025
+- Degree: Bachelors of Technology
+- CGPA: 7.84
+
+Certifications:
+1. Deep Learning Specialization | Coursera
+   Link: https://coursera.org/verify/specialization/NT7WWU2TTCWD
+2. Machine Learning Specialization | Coursera
+   Link: https://coursera.org/verify/specialization/NT7WWU2TTCWD
+3. Mathematics for Machine Learning and Data Science | Coursera
+   Link: #
+4. Exploratory Data Analysis for Machine Learning | IBM
+   Link: https://www.coursera.org/account/accomplishments/certificate/6PANPBE6A799
+5. SQL for Data Analysis | LinkedIn
+   Link: https://www.linkedin.com/learning/certificates/9327f6f17d939589b56d2640012be7b7730dbcc2352f450fabcb60195642de85
+6. Hacktoberfest 2022 | Open Source Contributor | Holopin
+   Link: https://www.holopin.io/@pandeymritunjay
+7. Google Cloud Facilitators Programme | Google Cloud
+   Link: https://www.cloudskillsboost.google/public_profiles/7c73939c-b400-488e-ae3e-c3971437139e
+8. Mastering Data Structures and Algorithms using C/C++ | Udemy
+   Link: https://www.udemy.com/certificate/UC-cc4b736c-b973-44eb-9d0b-59168b32a68e/
+
+========================================
+8) RESEARCH PAPER
+========================================
+Section title:
+- Research Paper
+
+Featured publication:
+- Pandey, M. (2026). Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation. Journal of the ACM (JACM), submitted/under review [Manuscript ID: JACM-2026-002]. arXiv:2602.00899.
+
+Links:
+- Open on arXiv (abstract): https://arxiv.org/abs/2602.00899
+- PDF preview URL: https://arxiv.org/pdf/2602.00899.pdf
+
+========================================
+9) PROJECTS
+========================================
+Projects section subtitle:
+- Showcasing innovative AI/ML solutions and real-world applications
+
+Project 1:
+- Title: High Performance Two-Tower Recommendation System
+- Description: End-to-end semantic retrieval system using a fine-tuned MPNet Bi-Encoder with supervised contrastive learning for query-item alignment. Implements FAISS HNSW approximate nearest neighbor indexing for O(log N) vector search and ONNX Runtime Int8 quantization for 5x faster CPU inference. Deployed as a real-time microservice with integrated A/B latency benchmarking.
+- Technologies: LangChain, Llama, FastAPI
+- Code: https://huggingface.co/spaces/Pandeymp29/Optimised-Amazon-RecSys/tree/main
+- Demo: https://huggingface.co/spaces/Pandeymp29/Optimised-Amazon-RecSys
+- Image: /recsys.png
+
+Project 2:
+- Title: Agent Portfolio and Valuation Advisor (APVA)
+- Description: LangChain-powered agentic framework running a multi-LLM pipeline (Llama-3.3-70B, Nemotron-49B) with streaming inference, retry logic, and 5+ API integrations using rate limits and graceful fallbacks for 99.9% uptime. Developed an LLM-driven multi-tier pricing engine generating six strategic price points with structured JSON parsing, rationales, buyer personas, and hold-time optimization.
+- Technologies: LangChain, Llama, FastAPI
+- Code: https://github.com/PandeyMritunjay/apva-assignment
+- Demo: https://drive.google.com/file/d/1VxOVuW9qBVgrpZt-T9rTYY-eQiVwKouN/view?usp=sharing
+- Image: /projects-apva.png
+
+Project 3:
+- Title: Multi-Agent LinkedIn Optimization System
+- Description: Developed single-agent AI system for profile analysis (0-100 scoring), job fit assessment, content optimization (ATS-friendly), and career guidance using structured prompt engineering. Implemented a conversational AI coach with session memory, JSON-based data export, and a LinkedIn-style real-time feedback UI in Streamlit.
+- Technologies: LangChain, Conversational AI
+- GitHub: https://github.com/PandeyMritunjay/linkedin-test
+- Demo: https://github.com/PandeyMritunjay/linkedin-test
+- Image: https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop
+
+Project 4:
+- Title: Medicine Recommendation System
+- Description: Emergency-ready ML assistant that personalizes drug recommendations from symptoms, vitals, and EHRs while keeping data private. Backed by Kaggle clinical datasets for trustworthy suggestions in critical care.
+- Technologies: Jupyter, scikit-learn, Pandas
+- GitHub: https://github.com/PandeyMritunjay/Medicine-Recommendation-Systems
+- Demo: https://www.loom.com/share/3ccb67df647548328340e6fb152d4ce5?sid=1c8478fa-889b-478a-9b08-420f22054ecd
+- Image: https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=800&h=600&fit=crop
+
+Project 5:
+- Title: Virtual Painting Studio
+- Description: Gesture-driven drawing surface powered by OpenCV + MediaPipe that follows index-finger paths, toggles colors/eraser with multi-finger poses, and adjusts brush thickness through thumb-index distance.
+- Technologies: OpenCV, MediaPipe, Flask
+- GitHub: https://github.com/PandeyMritunjay/Intelligent-Image-Processing-System-Based-on-Virtual-Painting
+- Demo: https://virtual-painting.el.r.appspot.com/
+- Image: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=600&fit=crop
+
+========================================
+10) EXPERIENCE
+========================================
+Experience 1:
+- Title: Business Analyst
+- Company: Aditya Birla Group - Grasim
+- Location: Mumbai, India
+- Period: Aug 2025 ----- - Present
+- Highlights:
+  - Converted SAP sales data into Excel and Power BI dashboards for MIS insights.
+  - Daily production analysis through Birla Assure to detect deviations across 3200 TPD plants.
+  - Supported Business Development by analyzing home textiles market and assisting 200 kg Modal hub development.
+- Technologies: SAP, Excel, Power BI, Data Analysis
+
+Experience 2:
+- Title: AI Engineer
+- Company: Namekart Pvt. Ltd.
+- Location: Noida, India
+- Period: Jan 2025 ------ Aug 2025
+- Highlights:
+  - Trained Transformer + MLP on 767K+ domains for price prediction (L1 $270, L2 $500).
+  - Built DistilBERT + MLP with SE-block fusion and Huber Loss.
+  - Automated lead discovery and classification using LangChain and LinkedIn scraping.
+  - Deployed on Azure ML with confidence-based price range outputs.
+- Technologies: PyTorch, Hugging Face, Azure, Transformer, MLP
+
+Experience 3:
+- Title: AI Supervised Fine tuning Agent
+- Company: Invisible Technologies
+- Location: Remote, USA
+- Period: Sep 2024 ------ Jan 2025
+- Highlights:
+  - Created 700+ gold-standard triads for Python and STEM SFT and RLHF training.
+  - Achieved 98% QC accuracy; promoted to Reviewer for LLM dataset validation.
+  - Evaluated 2,000+ prompts using SOPs and Human-in-the-Loop review to reduce hallucinations.
+- Technologies: Python, Chain-of-Thought, RLHF, Prompt Engineering
+
+Experience 4:
+- Title: Machine Learning Engineer
+- Company: Statcon Electronics India Limited (SEIL)
+- Location: Delhi, India
+- Period: May 2024 ------ Aug 2024
+- Highlights:
+  - Built CNN-LSTM SoH model with 96% accuracy and RMSE 0.02.
+  - Processed 10K+ cycles and predicted failures 50 steps ahead.
+  - Deployed Streamlit demo with sub-150 ms inference.
+- Technologies: Seq2Seq Modelling, Streamlit, Time Series Analysis
+
+========================================
+11) CONTACT SECTION (FULL CONTACT COMPONENT DATA)
+========================================
+Section heading:
+- Get In Touch
+
+Section subtext:
+- Let's collaborate on your next AI/ML project
+
+Connect with me methods:
+Email: mritunjay@thedatascientist.live
+personal email: mritunjaypandey0429@gmail.com
+website: thedatascientist.live
+2. LinkedIn
+   - Link: https://www.linkedin.com/in/pandeym29/
+3. GitHub
+   - Link: https://github.com/PandeyMritunjay
+4. Twitter
+   - Display value: @Pandey_M29
+   - Link: https://twitter.com/Pandey_M29
+
+
+========================================
+12) BOTTOM CONTACT BAR
+========================================
+
+Contact form fields:
+- Name
+- Email
+- Message
+- Submit button text: Send Message (shows "Sending..." while submitting)
+
+
+Label:
+- Let's Talk
+
+Fields:
+- Your email
+- Send a message
+
+Button:
+- Send
+
+Email handling:
+- Submits to mailto:
+  mailto:mritunjay@thedatascientist.live?subject=Portfolio%20Contact&body=...
+
+========================================
+13) FOOTER
+========================================
+Text:
+- Made with ❤️ by Mritunjay Pandey
+
+========================================
+14) IMPORTANT NOTE
+========================================
+This text file is generated from the source code content in the portfolio project.
+If website content changes in code, regenerate this file to keep it updated.

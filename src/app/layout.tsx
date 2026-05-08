@@ -28,7 +28,7 @@ const dancing = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Mritunjay Pandey - Data Scientist & AI Engineer",
+  title: "Hire Data Scientist",
   description: "Portfolio of Mritunjay Pandey, a Data Scientist and AI Engineer specializing in machine learning, deep learning, and artificial intelligence solutions.",
   keywords: ["Data Science", "AI Engineer", "Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Portfolio"],
   authors: [{ name: "Mritunjay Pandey" }],
@@ -44,6 +44,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mritunjay Pandey - Data Scientist & AI Engineer",
     description: "Portfolio showcasing AI and Data Science projects",
+  },
+  icons: {
+    icon: "fav1.png",
+    shortcut: "D:\AI Fullstack\CascadeProjects\windsurf-project\logos\fav1.png",
   },
 };
 

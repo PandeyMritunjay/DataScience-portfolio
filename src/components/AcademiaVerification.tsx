@@ -56,7 +56,7 @@ export default function AcademiaVerification() {
   ];
 
   return (
-    <section id="education" className="py-24 text-white">
+    <section id="education" className="py-16 md:py-20 text-white">
       <div className="max-w-7xl w-full mx-auto px-6 md:px-10">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

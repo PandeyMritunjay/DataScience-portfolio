@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
@@ -8,6 +8,7 @@ export default function Header() {
 
   const lastScrollY = useRef(0);
   const [hidden, setHidden] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     lastScrollY.current = window.scrollY;
@@ -87,14 +88,31 @@ export default function Header() {
           "
         />
 
-        {/* Text */}
-        <span className="relative z-10 whitespace-nowrap">
+        {/* Text - hidden on mobile, icon shown instead */}
+        <span className="relative z-10 whitespace-nowrap hidden sm:inline">
           Resume
         </span>
-
-        {/* Arrow */}
         <svg
-          className="relative z-10"
+          className="relative z-10 sm:hidden"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+          <polyline points="10 9 9 9 8 9" />
+        </svg>
+
+        {/* Arrow - hidden on mobile */}
+        <svg
+          className="relative z-10 hidden sm:block"
           width="15"
           height="15"
           viewBox="0 0 24 24"
@@ -115,8 +133,8 @@ export default function Header() {
         target="_blank"
         rel="noopener noreferrer"
         className="
-          hidden md:flex
-          fixed top-6 right-6 md:top-8 md:right-8 z-[60]
+          hidden lg:flex
+          fixed top-6 right-6 lg:top-8 lg:right-8 z-[60]
           overflow-hidden
           items-center justify-center
           rounded-[18px]
@@ -166,9 +184,57 @@ export default function Header() {
         </span>
       </motion.a>
 
-      {/* NAVBAR */}
+      {/* MOBILE HAMBURGER BUTTON */}
+      <motion.button
+        className="fixed top-4 right-4 sm:top-6 sm:right-6 lg:hidden z-[90] w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 backdrop-blur-md"
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        whileTap={{ scale: 0.95 }}
+      >
+        <div className="flex flex-col gap-1.5">
+          <motion.span
+            className="block w-5 h-0.5 bg-white rounded-full"
+            animate={mobileMenuOpen ? { rotate: 45, y: 4 } : { rotate: 0, y: 0 }}
+          />
+          <motion.span
+            className="block w-5 h-0.5 bg-white rounded-full"
+            animate={mobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
+          />
+          <motion.span
+            className="block w-5 h-0.5 bg-white rounded-full"
+            animate={mobileMenuOpen ? { rotate: -45, y: -4 } : { rotate: 0, y: 0 }}
+          />
+        </div>
+      </motion.button>
+
+      {/* MOBILE MENU DROPDOWN */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -20, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-16 left-4 right-4 sm:top-20 sm:left-6 sm:right-6 z-[85] lg:hidden rounded-2xl bg-black/95 border border-white/10 backdrop-blur-xl p-6 shadow-2xl"
+          >
+            <nav className="flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link}
+                  href={`#${link}`}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-white text-lg font-medium capitalize py-2 px-4 rounded-lg hover:bg-white/5 transition-colors"
+                >
+                  {link}
+                </a>
+              ))}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* DESKTOP NAVBAR */}
       <motion.header
-        className="fixed top-8 left-4 right-4 sm:left-6 sm:right-6 md:left-8 md:right-8 lg:left-12 lg:right-12 z-50"
+        className="fixed top-8 left-4 right-4 sm:left-6 sm:right-6 lg:left-8 lg:right-8 xl:left-12 xl:right-12 z-50 hidden lg:block"
         animate={hidden ? { y: -80, opacity: 0 } : { y: 0, opacity: 1 }}
         transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
         style={{ pointerEvents: hidden ? "none" : "auto" }}

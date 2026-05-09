@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-24 text-white"
+      className="py-16 md:py-20 text-white"
       style={{ fontFamily: '"Times New Roman", Times, serif' }}
     >
       <div className="max-w-7xl w-full mx-auto px-6 md:px-10">
@@ -30,7 +30,7 @@ export default function Skills() {
           <img
             src={skillsImage.src}
             alt="Skills Visualization"
-            className="w-[85%] max-w-6xl object-contain"
+            className="w-full sm:w-[95%] md:w-[90%] max-w-none object-contain"
           />
         </motion.div>
 

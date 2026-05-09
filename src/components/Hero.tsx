@@ -188,14 +188,14 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative min-h-[80vh] md:min-h-screen overflow-hidden bg-black text-white">
+    <section className="relative min-h-[80vh] md:min-h-[95vh] overflow-hidden bg-black text-white">
       {/* cinematic glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_35%_35%,rgba(34,211,238,0.14),transparent_55%),radial-gradient(circle_at_70%_40%,rgba(232,121,249,0.10),transparent_55%),radial-gradient(circle_at_50%_70%,rgba(250,204,21,0.10),transparent_60%)] opacity-100" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-10 min-h-[80vh] md:min-h-screen flex items-center justify-center py-16 md:py-24">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-10 min-h-[80vh] md:min-h-[95vh] flex items-center justify-center py-16 md:py-24">
         {/* company cutouts */}
         {showDecor &&
           companies.map((c, i) => (

@@ -74,7 +74,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-24 w-full bg-black px-4 sm:px-6 md:px-8">
+    <section id="projects" className="py-16 md:py-20 w-full bg-black px-4 sm:px-6 md:px-8">
       <div className="max-w-6xl w-full mx-auto">
         
         {/* Section Header - 03. PROJECTS */}

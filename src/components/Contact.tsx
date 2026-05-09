@@ -38,7 +38,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="pt-20 md:pt-32 pb-10 md:pb-14 bg-black text-white relative overflow-hidden">
+    <section id="contact" className="pt-16 md:pt-24 pb-16 md:pb-24 bg-black text-white relative">
       {/* Subtle background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-white/[0.02] blur-[120px] rounded-full pointer-events-none" />
 

@@ -13,7 +13,7 @@ export default function ResearchPaper() {
   };
 
   return (
-    <section id="research" className="py-32 min-h-screen flex items-center">
+    <section id="research" className="py-16 md:py-24 flex items-center">
       <div className="max-w-7xl w-full">
         {/* Section Header */}
         <motion.div

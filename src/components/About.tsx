@@ -146,7 +146,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-32 min-h-screen flex items-center">
+    <section id="about" className="pt-12 pb-28 min-h-screen flex items-center">
       <div className="max-w-7xl w-full">
         <div className="relative isolate grid grid-cols-1 lg:grid-cols-[0.45fr_1.55fr] gap-8 lg:gap-15 items-center">
           {/* Left Column - Profile Image */}
@@ -167,7 +167,7 @@ export default function About() {
               />
             </div>
 
-            <div className="mt-[2cm] flex items-center justify-between max-w-[280px]">
+            <div className="mt-8 sm:mt-10 md:mt-12 flex items-center justify-between max-w-[280px]">
               {contactLinks.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -214,19 +214,19 @@ export default function About() {
               >
                 <div className="flex flex-col gap-4">
                   {rows.map((row) => (
-                    <div key={row.label} className="flex items-stretch gap-2 py-1">
+                    <div key={row.label} className="flex flex-col sm:flex-row items-stretch gap-2 py-1">
                       <div
-                        className="w-[230px] shrink-0 text-white flex items-center justify-center shadow-[0_12px_26px_rgba(0,0,0,0.45)] px-4 py-7"
+                        className="w-full sm:w-[180px] md:w-[230px] shrink-0 text-white flex items-center justify-center shadow-[0_12px_26px_rgba(0,0,0,0.45)] px-4 py-4 sm:py-7"
                         style={{ background: row.colorDark }}
                       >
-                        <div className="text-[15px] md:text-[18px] font-normal text-center leading-snug opacity-95">
+                        <div className="text-[14px] sm:text-[15px] md:text-[18px] font-normal text-center leading-snug opacity-95">
                           {row.label}
                         </div>
                       </div>
 
                       <div className="relative flex-1">
                         <div
-                          className="px-10 py-7 shadow-[0_12px_26px_rgba(0,0,0,0.35)] flex items-center justify-center"
+                          className="px-4 sm:px-6 md:px-10 py-4 sm:py-7 shadow-[0_12px_26px_rgba(0,0,0,0.35)] flex items-center justify-center"
                           style={{
                             background: row.color,
                             clipPath:
@@ -234,7 +234,7 @@ export default function About() {
                           }}
                         >
                           <div className="text-white/95 text-center max-w-[65ch]">
-                            <div className="text-[17px] md:text-[17px] leading-relaxed text-white/90">
+                            <div className="text-[14px] sm:text-[16px] md:text-[17px] leading-relaxed text-white/90">
                               {row.value}
                             </div>
                           </div>
